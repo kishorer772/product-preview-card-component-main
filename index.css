@@ -29,7 +29,7 @@ body {
   background-size: cover; /* or contain depending on your needs */
   background-repeat: no-repeat;
   width: 50%;
-  object-fit: contain;
+  /* object-fit: contain; */
   /* height: 100vh;  */
   /* or any other fixed height */
 }
@@ -85,7 +85,9 @@ button {
   color: white;
   background-color: var(--cyan);
 }
-
+.svg-icon {
+  width: 12px;
+}
 @media screen and (max-width: 768px) {
   .app {
     flex-direction: column;
