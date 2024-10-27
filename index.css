@@ -29,9 +29,6 @@ body {
   background-size: cover; /* or contain depending on your needs */
   background-repeat: no-repeat;
   width: 50%;
-  /* object-fit: contain; */
-  /* height: 100vh;  */
-  /* or any other fixed height */
 }
 .text-section {
   flex: 1;
