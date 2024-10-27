@@ -1,0 +1,99 @@
+* {
+  --cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat';
+}
+
+.container {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app {
+  border: 2px solid var(--cream);
+  border-radius: 15rem;
+  max-width: 40%;
+  display: flex;
+}
+
+.img-section {
+  flex: 1;
+  background-image: url('./images/image-product-desktop.jpg');
+  background-size: cover; /* or contain depending on your needs */
+  background-repeat: no-repeat;
+  width: 50%;
+  object-fit: contain;
+  /* height: 100vh;  */
+  /* or any other fixed height */
+}
+.text-section {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: white;
+  /* height: 50vh; */
+}
+.price-tag {
+  padding-block: 1rem;
+}
+p,
+button {
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+.caption {
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+}
+.title {
+  padding-block: 1rem;
+  font-family: 'Fraunces';
+  font-size: 2rem;
+}
+.info {
+  padding-block: 0.5rem;
+  line-height: 1.5rem;
+}
+.caption,
+.info {
+  color: gray;
+}
+.btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.sp {
+  font-family: 'Fraunces';
+  font-size: 1rem;
+  font-weight: bold;
+}
+.mp {
+  text-decoration: line-through;
+}
+.cart-btn {
+  font-weight: 600;
+  color: white;
+  background-color: var(--cyan);
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .img-section {
+    width: 100%;
+    min-height: 30vh;
+    object-fit: contain;
+  }
+}
